@@ -1,0 +1,60 @@
+Code:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nmap Scan Output</title>
+  <style>
+    body { font-family: monospace; white-space: pre; }
+  </style>
+</head>
+<body>
+Microsoft Windows [Version 10.0.26200.6899]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\chmku&gt;ipconfig
+
+Windows IP Configuration
+
+Unknown adapter ProtonVPN:
+IPv4 Address: 10.2.0.2
+Subnet Mask: 255.255.255.255
+Default Gateway: 0.0.0.0
+
+Unknown adapter Local Area Connection:
+Media disconnected
+
+Wireless LAN adapter Local Area Connection* 1:
+Media disconnected
+
+Wireless LAN adapter Local Area Connection* 2:
+Media disconnected
+
+Ethernet adapter VMware Network Adapter VMnet1:
+IPv4 Address: 192.168.157.1
+Subnet Mask: 255.255.255.0
+
+Ethernet adapter VMware Network Adapter VMnet8:
+IPv4 Address: 192.168.174.1
+Subnet Mask: 255.255.255.0
+
+Wireless LAN adapter Wi-Fi:
+IPv4 Address: 10.181.14.62
+Subnet Mask: 255.255.255.0
+Default Gateway: 10.181.14.59
+
+C:\Users\chmku&gt;nmap -Ss 192.168.1.0/24
+Failed to resolve/decode supposed IPv4 source address "s": No such host is known.
+QUITTING!
+
+C:\Users\chmku&gt;nmap -sS 192.168.1.0/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-10-20 21:29 +0530
+Stats: 0:01:21 elapsed; 0 hosts completed (0 up), 256 undergoing Ping Scan
+Ping Scan Timing: About 39.06% done; ETC: 21:33 (0:02:06 remaining)
+Stats: 0:03:15 elapsed; 0 hosts completed (0 up), 256 undergoing Ping Scan
+Ping Scan Timing: About 94.24% done; ETC: 21:33 (0:00:12 remaining)
+Nmap done: 256 IP addresses (0 hosts up) scanned in 208.63 seconds
+</body>
+</html>
